@@ -1,0 +1,110 @@
+/* --------------- CUSTOM STYLES */
+/**
+ * SSO Sessions Styles
+ */
+#cas-sessions, #no-cas-sessions {
+  display: none;
+}
+
+#no-cas-sessions div {
+  margin-top: 2em;
+}
+
+.ssoSessions #content {
+  border-radius: 4px;
+  padding: 20px;
+}
+
+.ssoSessions .sorting_desc, .ssoSessions .sorting_asc {
+  background-color: rgba(239, 239, 239, 0.8);
+}
+
+.ssoSessions #removeAllSessionsButton.btn .badge {
+  color: #000;
+  padding-right: 9px;
+}
+
+.ssoSessions .adminPanels {
+  border-bottom: 1px solid #efefef;
+  margin-bottom: 2em;
+  margin-top: 1em;
+  padding-bottom: 1em;
+}
+
+.ssoSessions .adminPanels .adminPanels .panel-default > .panel-heading {
+  background-color: #fff;
+  border-bottom: none;
+}
+
+.ssoSessions .adminPanels .adminPanels .panel-default > .panel-heading h3 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 20pt;
+}
+
+.ssoSessions .adminPanels .adminPanels .panel-default > .panel-heading::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  top: -5px;
+  right: 30px;
+  font-size: 70pt;
+  color: #153e50;
+  opacity: 0.1;
+}
+
+.ssoSessions td.details-control {
+  cursor: pointer;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 10pt;
+  color: #337ab7;
+}
+
+.ssoSessions td.details-control::after {
+  content: "\f067";
+}
+
+.ssoSessions tr.shown td.details-control::after {
+  content: "\f068";
+}
+
+.row-detail-wrapper {
+  background-color: #d9edf7;
+}
+
+.ssoSessions .row-detail {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.ssoSessions .row-detail thead {
+  display: none;
+}
+
+table.principal_attributes td:first-child {
+  width: 30%;
+}
+
+table.principal_attributes > tbody > tr > td {
+  border-top-color: #E6E6E6;
+}
+
+/* Session container --*/
+#cas-sessions,
+#container-stable,
+.ui-widget {
+  font-family: 'Lato', sans-serif !important;
+  font-size: 14px;
+}
+
+#container-stable {
+  margin: 20px 0 20px;
+}
+
+#container-stable {
+  margin: 40px 0 20px;
+}
+
+#container-stable table th {
+  text-align: left;
+}
