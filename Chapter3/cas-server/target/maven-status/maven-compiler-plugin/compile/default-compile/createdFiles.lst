@@ -1,0 +1,4 @@
+net/anumbrella/sso/entity/User.class
+net/anumbrella/sso/authentication/CustomerHandler.class
+net/anumbrella/sso/authentication/CustomAuthentication.class
+net/anumbrella/sso/config/CustomAuthenticationConfiguration.class

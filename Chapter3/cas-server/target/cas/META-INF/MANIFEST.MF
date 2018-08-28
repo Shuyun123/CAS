@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Implementation-Title: cas-server-webapp-tomcat
+Implementation-Version: 5.3.2
+Built-By: anumbrella
+Implementation-Date: 2018-07-27T02:25:08.003-07:00[America/Phoenix]
+Spring-Boot-Version: 1.5.14.RELEASE
+Implementation-Vendor: org.apereo.cas
+Main-Class: org.springframework.boot.loader.WarLauncher
+Start-Class: org.apereo.cas.web.CasWebApplication
+Spring-Boot-Classes: WEB-INF/classes/
+Spring-Boot-Lib: WEB-INF/lib/
+Created-By: org.apereo.cas
+Build-Jdk: 1.8.0
+Specification-Version: 145d8c3dd5e27333dd05f5cc10987df4656fba5e
+

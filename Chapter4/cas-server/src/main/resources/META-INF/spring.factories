@@ -1,0 +1,3 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  net.anumbrella.sso.config.CustomAuthenticationConfiguration,\
+  net.anumbrella.sso.controller.ServicesManagerController
