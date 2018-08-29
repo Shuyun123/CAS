@@ -231,7 +231,6 @@
 
 
     <dependencies>
-
         <!--新增支持jdbc验证-->
         <dependency>
             <groupId>org.apereo.cas</groupId>
@@ -243,26 +242,6 @@
         <dependency>
             <groupId>org.apereo.cas</groupId>
             <artifactId>cas-server-support-jdbc-drivers</artifactId>
-            <version>${cas.version}</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.apereo.cas</groupId>
-            <artifactId>cas-server-support-generic</artifactId>
-            <version>${cas.version}</version>
-        </dependency>
-
-        <!-- Shiro Authentication -->
-        <dependency>
-            <groupId>org.apereo.cas</groupId>
-            <artifactId>cas-server-support-shiro-authentication</artifactId>
-            <version>${cas.version}</version>
-        </dependency>
-
-        <!-- Rest Authentication -->
-        <dependency>
-            <groupId>org.apereo.cas</groupId>
-            <artifactId>cas-server-support-rest-authentication</artifactId>
             <version>${cas.version}</version>
         </dependency>
 
