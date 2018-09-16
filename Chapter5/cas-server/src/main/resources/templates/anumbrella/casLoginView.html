@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>单点登录SSO</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+    <link rel="stylesheet" th:href="@{${#themes.code('anumbrella.standard.css.file')}}"/>
+</head>
+
+<body>
+<div class="cotn_principal">
+    <div class="cont_centrar">
+        <div class="cont_login">
+            <div class="cont_info_log_sign_up">
+                <div class="col_md_login">
+                    <div class="cont_ba_opcitiy">
+                        <h2>SSO</h2>
+                        <p>点击登录输入信息</p>
+                        <button class="btn_login" onClick="cambiar_login()">登录</button>
+                    </div>
+                </div>
+            </div>
+            <div class="cont_back_info">
+                <div class="cont_img_back_grey"> <img th:src="@{${#themes.code('anumbrella.login.images.path')}+'/po.jpeg'}" alt="" /> </div>
+            </div>
+            <div class="cont_forms" >
+                <div class="cont_img_back_"> <img th:src="@{${#themes.code('anumbrella.login.images.path')}+'/po.jpeg'}" alt="" /> </div>
+                <div class="cont_form_login"> <a href="#" onClick="ocultar_login_sign_up()" ><i class="material-icons">&#xE5C4;</i></a>
+                    <form method="post" th:object="${credential}">
+                        <h2>SSO</h2>
+                        <section class="row">
+                            <div th:unless="${openIdLocalId}">
+                                <input class="required"
+                                       id="username"
+                                       size="25"
+                                       tabindex="1"
+                                       placeholder="用户名"
+                                       type="text"
+                                       th:disabled="${guaEnabled}"
+                                       th:field="*{username}"
+                                       th:accesskey="#{screen.welcome.label.netid.accesskey}"
+                                       autocomplete="off"/>
+                            </div>
+                        </section>
+
+                        <section class="row">
+                            <div>
+                                <input class="required"
+                                       type="password"
+                                       id="password"
+                                       size="25"
+                                       tabindex="2"
+                                       placeholder="密码"
+                                       th:accesskey="#{screen.welcome.label.password.accesskey}"
+                                       th:field="*{password}"
+                                       autocomplete="off"/>
+                            </div>
+                        </section>
+
+                        <section class="row">
+                            <div>
+                                <input class="required"
+                                       id="email"
+                                       size="25"
+                                       tabindex="1"
+                                       placeholder="邮箱"
+                                       type="text"
+                                       th:field="*{email}"
+                                       autocomplete="off"/>
+                            </div>
+                        </section>
+
+                        <section class="row">
+                            <div>
+                                <input class="required"
+                                       id="telephone"
+                                       size="25"
+                                       tabindex="1"
+                                       placeholder="手机"
+                                       type="text"
+                                       th:field="*{telephone}"
+                                       autocomplete="off"/>
+                            </div>
+                        </section>
+
+
+                        <section>
+                            <input type="hidden" name="execution" th:value="${flowExecutionKey}"/>
+                            <input type="hidden" name="_eventId" value="submit"/>
+                            <input type="hidden" name="geolocation"/>
+                            <input class="btn btn-submit btn-block btn_login"
+                                   style="text-align: center"
+                                   name="submit"
+                                   accesskey="l"
+                                   th:value="#{screen.welcome.button.login}"
+                                   tabindex="6"
+                                   type="submit"/>
+                        </section>
+                        <div th:if="${#fields.hasErrors('*')}">
+                            <span th:each="err : ${#fields.errors('*')}" th:utext="${err}"/>
+                        </div>
+                    </form>
+                </div>
+                <div class="cont_form_sign_up"/>
+            </div>
+        </div>
+    </div>
+</div>
+<script th:src="@{${#themes.code('anumbrella.javascript.file')}}"></script>
+</body>
+</html>
