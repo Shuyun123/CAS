@@ -73,6 +73,13 @@
             <version>${cas.version}</version>
             <type>war</type>
         </dependency>
+             
+        <!-- 数据库jdbc驱动 -->
+        <dependency>
+            <groupId>org.apereo.cas</groupId>
+            <artifactId>cas-server-support-jdbc-drivers</artifactId>
+            <version>${cas.version}</version>
+        </dependency>
 
         <!-- Jpa Service Registry -->
 
