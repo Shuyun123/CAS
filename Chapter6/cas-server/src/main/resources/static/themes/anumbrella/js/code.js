@@ -2,7 +2,7 @@ function changeCode(){
     var node = document.getElementById("captcha_img");
     //修改验证码
     if (node){
-        node.src = '/captcha?id='+uuid();
+        node.src = node.src+'?id='+uuid();
     }
 }
 
