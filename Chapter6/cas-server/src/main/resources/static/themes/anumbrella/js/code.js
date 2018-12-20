@@ -7,7 +7,6 @@ function changeCode(){
         }else{
             node.src = url +'?id='+uuid();
         }
-
     }
 }
 
