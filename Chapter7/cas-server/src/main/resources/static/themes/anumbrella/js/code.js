@@ -1,6 +1,7 @@
 function changeCode(){
     var node = document.getElementById("captcha_img");
-    //修改验证码
+    var url = node.src;
+    // 修改验证码
     if (node){
         if(url.indexOf("?") >= 0){
             node.src = url.split('?')[0] +'?id='+uuid();
