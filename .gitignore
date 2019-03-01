@@ -25,5 +25,6 @@ target/*
 hs_err_pid*
 
 .idea
-overlays
+overlays/*
+*.iml
 
