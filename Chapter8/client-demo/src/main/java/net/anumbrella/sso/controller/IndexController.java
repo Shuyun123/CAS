@@ -29,7 +29,7 @@ public class IndexController {
 
     @GetMapping("/login")
     public String login(){
-        return "login";
+        return "index";
     }
 
     @PostMapping("/loginVerify")
@@ -50,7 +50,7 @@ public class IndexController {
     @GetMapping("/logout")
     public String logout(HttpSession session){
         session.removeAttribute(WebSecurityConfig.SESSION_KEY);
-        return "redirect:/login";
+        return "redirect:https://sso.anumbrella.net:8443/cas/logout";
     }
 
 }
