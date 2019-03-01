@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>cas登录</title>
+    <style type="text/css">
+        ul li{
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+<div >
+    <form name="form" accept-charset="utf-8"  action="/loginVerify" method="post">
+        <ul >
+            <li>
+                <label for="username"  class="input-tips2">用户名：</label>
+                <div class="inputOuter2">
+                    <input type="text" id="username" name="username" maxlength="16" />
+                </div>
+            </li>
+            <li>
+                <label for="password" class="input-tips2">密码：</label>
+                <div >
+                    <input type="password" id="password"  name="password" maxlength="16"/>
+                </div>
+            </li>
+            <li>
+                <div >
+                    <input type="submit" value="登录"/>
+                </div>
+            </li>
+        </ul>
+    </form>
+</div>
+</body>
+</html>

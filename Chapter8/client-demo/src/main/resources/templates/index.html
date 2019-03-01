@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h3 th:text="登录成功"></h3>
+你好！
+<div th:text="${session.users}"></div>
+<a href="/logout">注销</a>
+</body>
+</html>
