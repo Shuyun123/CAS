@@ -400,14 +400,6 @@
         </dependency>
 
 
-        <!-- rest services -->
-
-       <dependency>
-            <groupId>org.apereo.cas</groupId>
-            <artifactId>cas-server-support-rest-services</artifactId>
-            <version>${cas.version}</version>
-        </dependency>
-
     </dependencies>
 
 
